@@ -1,0 +1,391 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"diff",
+				"Git: Diff Staged"
+			],
+			[
+				"comit",
+				"Git: Commit"
+			],
+			[
+				"chagen",
+				"Git: Change Branch"
+			],
+			[
+				"add ..",
+				"Git: Add..."
+			],
+			[
+				"add..",
+				"Git: Add..."
+			],
+			[
+				"synmel",
+				"Set Syntax: MEL"
+			],
+			[
+				"syrestru",
+				"Set Syntax: reStructuredText Improved"
+			],
+			[
+				"synrst",
+				"Set Syntax: reStructuredText"
+			],
+			[
+				"sycmake",
+				"Set Syntax: CMake"
+			],
+			[
+				"synpy",
+				"Set Syntax: Python 3"
+			],
+			[
+				"sypy",
+				"Set Syntax: Python"
+			],
+			[
+				"sypython",
+				"Set Syntax: Python"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 273.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/byron/Desktop/bprojects.rst",
+		"/Users/byron/Desktop/bsuite.rst",
+		"/Users/byron/Desktop/bsuite.rst.py",
+		"/Users/byron/Documents/sublime-projects/tx-core.sublime-project",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/byron/Documents/tx_bak/mainline/pipe/devel/doc/concepts/dependency_graph_object_relations.graphml",
+		"/Users/byron/Documents/tx_bak/mainline/pipe/devel/tx/processcontrol/components.py",
+		"/Users/byron/Documents/tx_bak/mainline/pipe/devel/tx/core/environ/components.py",
+		"/Users/byron/Documents/tx_bak/mainline/pipe/devel/CMakeLists.txt",
+		"/Volumes/encrypted/pipi/mainline/openmetadata/domain.py",
+		"/Applications/GitHub.app/Contents/Info.plist",
+		"/Applications/GitHub.app/Contents/ResourceRules.plist",
+		"/Applications/GitHub.app/Contents/PkgInfo",
+		"/Applications/GitHub.app/Contents/Library/LaunchServices/com.github.GitHub.GHInstallCLI",
+		"/Users/byron/Documents/dev/git-python/git/test/fixtures/rev_list_bisect_all",
+		"/Users/byron/Documents/dev/git-python/git/index/base.py",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/Pane Navigation/Default (OSX).sublime-keymap",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/byron/Documents/dev/gitolite-admin/conf/vault.conf",
+		"/Users/byron/Documents/dev/gitolite-admin/conf/pipe.conf",
+		"/Users/byron/Documents/dev/gitolite-admin/conf/maya_sdks.conf",
+		"/Users/byron/Documents/dev/gitolite-admin/conf/3rdparty.conf",
+		"/Users/byron/Documents/dev/gitolite-admin/conf/rg.conf",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/User/window_groups.py",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/Pane Navigation/README.md",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/Pane Navigation/Main.sublime-menu",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/SublimePaneNavigation/README.md",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/SublimePaneNavigation/PaneNavigation.py",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/SublimePaneNavigation/Main.sublime-menu",
+		"/Users/byron/Documents/dev/bsuite/bin/release/mel/AEptexVisNodeTemplate.mel",
+		"/Users/byron/Documents/dev/bsuite/src/lidar/visnode.cpp",
+		"/Users/byron/Documents/dev/bsuite/src/ptex/visnode.cpp",
+		"/Users/byron/Documents/dev/bsuite/src/ptex/util.h",
+		"/Users/byron/Documents/dev/bsuite/src/ptex/maya_main.cpp",
+		"/Users/byron/Documents/dev/bsuite/src/ptex/CMakeLists.txt",
+		"/Users/byron/Documents/dev/bsuite/src/mel/AEptexVisNodeTemplate.mel",
+		"/Users/byron/Documents/dev/bsuite/test/test_ptex.py",
+		"/Users/byron/Documents/dev/bsuite/src/bpt/ByronsPolyToolsAction.cpp",
+		"/Users/byron/Documents/dev/bsuite/src/bpt/progressBar.cpp",
+		"/Users/byron/Documents/sublime-projects/bsuite.sublime-project",
+		"/Users/byron/Documents/dev/bsuite/bin/debug/2011/ptexvis.bundle",
+		"/Users/byron/Documents/dev/bsuite/bin/release/mel/AElidarVisNodeTemplate.mel",
+		"/Users/byron/Documents/dev/bsuite/src/mel/AElidarVisNodeTemplate.mel",
+		"/Users/byron/Documents/dev/bsuite/bin/release/scenes/ptex_triangle/texture.ptx",
+		"/Users/byron/Documents/dev/bsuite/src/mel/AEByronsPolyToolsNodeTemplate.mel",
+		"/Users/byron/Documents/dev/bsuite/fun.cmake",
+		"/Users/byron/Documents/dev/bsuite/configure.cmake",
+		"/Users/byron/Documents/dev/bsuite/CMakeLists.txt",
+		"/Users/byron/Documents/dev/bsuite/build/release_osx/CMakeFiles/CMakeOutput.log",
+		"/Users/byron/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/byron/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"launch",
+			"github",
+			"conduit",
+			"command",
+			"d",
+			"indent",
+			"prev_view_in_pane",
+			"next_view_in_pane",
+			"move_to",
+			"command",
+			"\"],",
+			"super",
+			"\"],",
+			"indent",
+			"}\"",
+			"indentation",
+			"super+shift+[",
+			"super+}",
+			"super+{",
+			"+[",
+			"vault",
+			"oms",
+			"mrv",
+			"oms",
+			"projects_old",
+			"devl1",
+			"@me",
+			"@repos",
+			"_me",
+			"data-vault",
+			"_devl1",
+			"steelbook",
+			"gutsche",
+			"_me",
+			"<<<",
+			"color_point",
+			"cmake_framework_path",
+			"			\n",
+			"\",\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"byron"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"project": "bdevel.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"corecompo",
+				"tx/core/environ/components.py"
+			],
+			[
+				"base",
+				"git/index/base.py"
+			],
+			[
+				"pip",
+				"conf/pipe.conf"
+			],
+			[
+				"conf",
+				"conf/gitolite.conf"
+			],
+			[
+				"fun",
+				"fun.cmake"
+			],
+			[
+				"ptex",
+				"src/ptex/visnode.cpp"
+			],
+			[
+				"visnod.h",
+				"src/lidar/visnode.h"
+			],
+			[
+				"visnod",
+				"src/lidar/visnode.cpp"
+			],
+			[
+				"ptext",
+				"bin/release/mel/AEptexVisNodeTemplate.mel"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"mrv",
+				"~/Documents/sublime-projects/mrv.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"environ",
+				"EnvironmentStack"
+			],
+			[
+				"",
+				"channel"
+			]
+		],
+		"width": 458.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
