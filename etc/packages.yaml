@@ -1,0 +1,8 @@
+packages:
+  ##########
+  bcore: ##
+  ########
+    trees:
+      - '{assembly.trees.core}/src/frameworks/core'
+    configuration:
+      trees: etc

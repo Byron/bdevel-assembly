@@ -1,0 +1,8 @@
+packages:
+  ##############
+  nosetests: ##
+  ############
+    # NOTE: this executbale should be able to test everything
+    requires:
+      - bcore
+      - mock
