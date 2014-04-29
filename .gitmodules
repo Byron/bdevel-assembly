@@ -1,0 +1,4 @@
+[submodule "bcore"]
+	url = https://github.com/Byron/bcore.git
+	path = src/frameworks/core
+	branch = refs/heads/master
