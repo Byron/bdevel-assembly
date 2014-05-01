@@ -13,3 +13,7 @@ package-manager:
     trees:
       - '{assembly.trees.nonfree-dependencies}/etc'
       - '{assembly.trees.oss-dependencies}/etc'
+    environment-variables:
+      regex:
+        is_path:            '^(.*path|.+paths|.+tree|.+location|.+home|ocio)$'
+        path_is_appendable: '^(?!(ocio|rmantree)).*$'
