@@ -2,7 +2,10 @@ packages:
   ##########
   bcore: ##
   ########
-    trees:
-      - '{assembly.trees.core}/src/frameworks/core'
-    configuration:
-      trees: etc
+    trees: '{assembly.trees.core}/src/frameworks/core'
+    include: etc
+  ##########
+  bqt:   ##
+  ########
+    trees: '{assembly.trees.core}/src/frameworks/gui'
+    include: etc

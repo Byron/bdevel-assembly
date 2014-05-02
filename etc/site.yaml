@@ -12,12 +12,11 @@ assembly:
     nonfree-dependencies: '{assembly.trees.core}/../bdep-nonfree'
 
 package-manager:
-  configuration:
-    # pull in the entire software configuration
-    trees:
-      - '{assembly.trees.nonfree-dependencies}/etc'
-      - '{assembly.trees.oss-dependencies}/etc'
-    environment-variables:
-      regex:
-        is_path:            '^(.*path|.+paths|.+tree|.+location|.+home|ocio)$'
-        path_is_appendable: '^(?!(ocio|rmantree)).*$'
+  include:
+   # pull in the entire software configuration
+   - '{assembly.trees.nonfree-dependencies}/etc'
+   - '{assembly.trees.oss-dependencies}/etc'
+  environment-variables:
+    regex:
+      is_path:            '^(.*path|.+paths|.+tree|.+location|.+home|ocio)$'
+      path_is_appendable: '^(?!(ocio|rmantree)).*$'

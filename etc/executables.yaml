@@ -7,6 +7,7 @@ packages:
       - bcore
       - mock
       - pgit-package
+      - bqt
 
   ##############
   ipython: ####
@@ -22,7 +23,7 @@ packages:
     requires:
       - bcore
       - pgit-package
-      - pyside
+      - bqt
     arguments:
       prepend:
         - -c
