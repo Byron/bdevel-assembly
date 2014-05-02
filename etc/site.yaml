@@ -1,3 +1,7 @@
+logging:
+  level: INFO
+  disable: 0
+
 assembly:
   trees:
     # root of the main application

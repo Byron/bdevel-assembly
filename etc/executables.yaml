@@ -7,3 +7,30 @@ packages:
       - bcore
       - mock
       - pgit-package
+
+  ##############
+  ipython: ####
+  ############
+    name: IPython Interactive Shell
+    description: |
+      A python shell with auto-complete and coloring, and a vast amount of other
+      features to help exploring APIs and frameworks quickly. It can also
+      be used as power-shell to get actual work done.
+    url: http://ipython.org/
+    alias: python
+    # for now those requirements come in with python site packages
+    requires:
+      - bcore
+      - pgit-package
+    arguments:
+      prepend:
+        - -c
+        - import butility; butility.init_ipython_terminal()
+
+  ###########
+  pgit:   ##
+  #########
+    # A little bit of repetition seems to be required here to trigger pulling in
+    # the required configuration
+    requires: pgit-package
+
