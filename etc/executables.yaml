@@ -18,10 +18,11 @@ packages:
       be used as power-shell to get actual work done.
     url: http://ipython.org/
     alias: python
-    # for now those requirements come in with python site packages
+    # We pull in a lot of packages for testing purposes
     requires:
       - bcore
       - pgit-package
+      - pyside
     arguments:
       prepend:
         - -c
