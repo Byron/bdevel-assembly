@@ -1,2 +1,6 @@
 platform:
-  id: linux
+  id: centos-6.5_x86-64
+packages:
+  # cenots 6 ships with 2.6, getting 2.7 is not super trivial, so probably no one will be doing it
+  python:
+    version: '2.6'
