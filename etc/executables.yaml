@@ -36,3 +36,13 @@ packages:
     # the required configuration
     requires: pgit-package
 
+  #########
+  be:   ##
+  ########
+    # A little bit of repetition seems to be required here to trigger pulling in
+    # the required configuration
+    alias: python
+    requires: 
+      - be-exec
+      - python
+
