@@ -1,0 +1,16 @@
+language: python
+python:
+  - "2.7"
+
+install:
+  - git submodule update --init --recursive
+  # at this point, we are in our devel repo : travis/repo
+  - git clone https://github.com/Byron/bdep-oss.git ../
+  - "(cd ../bdep-oss && git submodule update --init --recursive)"
+
+script:
+  - cd bin/posix
+  # we just check if we can execute progams, not if the unit-tests of them work
+  # the latter are handled individually
+  - ./nosetests
+  - ./pgit submodule query
