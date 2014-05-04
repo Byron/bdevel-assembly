@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An assembly for all development needs">
+        
+        <link rel="canonical" href="https://byron.github.io/bdevel-assembly/">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <title>bdevel-assembly</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/prettify-1.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">bdevel-assembly</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="active">
+                    <a href=".">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="license/">License</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="license/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/Byron/bdevel-assembly">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#prerequisites">Prerequisites</a></li>
+        
+    
+        <li class="main "><a href="#devel-assembly-structure">Devel Assembly Structure</a></li>
+        
+    
+        <li class="main "><a href="#top-level-python-package-naming">Top-level Python Package Naming</a></li>
+        
+            <li><a href="#prefixes">Prefixes</a></li>
+        
+    
+        <li class="main "><a href="#projects">Projects</a></li>
+        
+    
+        <li class="main "><a href="#project-assemblies">Project Assemblies</a></li>
+        
+            <li><a href="#assembly-directory-structure">Assembly Directory Structure</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p>This project is an assembly of various projects. It is meant as fully featured, multi-platform development structure that is easy to use and extend.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Python 2.6 or 2.7</li>
+<li>[cmake 2.8]<ul>
+<li>Only if you want to build documentation or C code</li>
+</ul>
+</li>
+<li>[A compiler]<ul>
+<li>Only if you want to build C code, compiler itself depends on platform</li>
+</ul>
+</li>
+</ul>
+<h3 id="devel-assembly-structure">Devel Assembly Structure</h3>
+<p>This paragraph provides you with an overview of the concepts behind the directory structure.
+As a rule, no project exists at multiple versions, like its the case in the <a href="https://github.com/Byron/bdistro-assembly">bdistro assembly</a>.</p>
+<ul>
+<li>
+<p>lib/*</p>
+<ul>
+<li>Contains various compiled custom libraries. If libraries don't require compilation due to their interpreted nature, they are used right from 'src'.</li>
+</ul>
+</li>
+<li>
+<p>etc</p>
+<ul>
+<li>Various configuration files</li>
+</ul>
+</li>
+<li>
+<p>src/collectives</p>
+<ul>
+<li>projects maintained by particular interest groups. Code may span various applications and programming languages</li>
+</ul>
+</li>
+<li>
+<p>src/integrations/*</p>
+<ul>
+<li>Each sub-directory contains a project with application specific code, i.e. 'maya' or 'mari'</li>
+</ul>
+</li>
+<li>
+<p>src/frameworks/*</p>
+<ul>
+<li>Various custom frameworks to aid writing tools</li>
+</ul>
+</li>
+<li>
+<p>doc/<project>/<version></p>
+<ul>
+<li>A repository which contains prebuilt documentation for various projects, supporting multiple versions of each project at the same time</li>
+</ul>
+</li>
+</ul>
+<h3 id="top-level-python-package-naming">Top-level Python Package Naming</h3>
+<p>As python packages will end up in an interpreter namespace which may contain various packages, it is required that top-level packages remain unique through prefixes.</p>
+<h4 id="prefixes">Prefixes</h4>
+<p>Every top level package has at least one prefix.</p>
+<p>Prefixes can form hierarchies, making names more specific. Each prefix can only have zero or more children.</p>
+<ul>
+<li>'b' = byronimo, top-level namespace</li>
+</ul>
+<p>However, as suffixes are unique enough, in practice multi-level prefixes are not used.</p>
+<h3 id="projects">Projects</h3>
+<p>Each project lives in its own git repository, and obeys a standard direcotry structure.
+Projects are usually named after their top-level python package in case of python projects, but this is by no means a requirement.</p>
+<ul>
+<li>
+<p>bbuild</p>
+<ul>
+<li>build system</li>
+</ul>
+</li>
+<li>
+<p>bcore</p>
+<ul>
+<li>general purpose library, stuff to run without additional dependencies</li>
+<li>Includes Wrapper Engine</li>
+</ul>
+</li>
+<li>
+<p>bmaya</p>
+<ul>
+<li>maya application specific integration layer</li>
+</ul>
+</li>
+<li>
+<p>bmayarv</p>
+<ul>
+<li>'revised' component for maya application</li>
+</ul>
+</li>
+</ul>
+<h3 id="project-assemblies">Project Assemblies</h3>
+<p>An assembly is an arrangement of one or more projects. The projects may or may not exist at multiple versions at the same time.</p>
+<p>There may be multiple project assemblies, which combine a variety of projects for different purposes.</p>
+<p>A prime example for assemblies is the existence of a 'mainline' assembly for developer work, as well as a distribution assembly. Usually they are structurally equal to some extend, even though the distribution assembly might contain transformed projects (e.g. compiled ones), and might miss various projects that are just dependencies needed for compilation of code.</p>
+<h4 id="assembly-directory-structure">Assembly Directory Structure</h4>
+<p>The directory structure may be absolutely arbitrary, and very much depends on what you want to accomplish.
+They should be made to be support consistent data, which implies it to be structured from broad to detailed. Additionally you wouldn't be allowed to store copies of the same dataset in multiple locations of the directory tree.</p>
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/prettify-1.0.min.js"></script>
+        <script src="./js/base.js"></script>
+    </body>
+</html>
