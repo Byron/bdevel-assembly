@@ -9,7 +9,7 @@ install:
   # at this point, we are in our devel repo : travis/repo
   - git clone --recurse-submodules https://github.com/Byron/bdep-oss.git ../bdep-oss
   # fix up the image to be good for us
-  - ln -s `which python` /usr/bin/python2.6
+  - sudo ln -s `which python` /usr/bin/python2.6
 
 script:
   - cd bin/posix
