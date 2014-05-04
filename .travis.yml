@@ -5,7 +5,7 @@ python:
 install:
   - git submodule update --init --recursive
   # at this point, we are in our devel repo : travis/repo
-  - git clone --recursive-submodules https://github.com/Byron/bdep-oss.git ../bdep-oss
+  - git clone --recurse-submodules https://github.com/Byron/bdep-oss.git ../bdep-oss
 
 script:
   - cd bin/posix
