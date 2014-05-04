@@ -1,0 +1,17 @@
+site_name: bdevel-assembly
+site_url: https://byron.github.io/bdevel-assembly
+site_description: An assembly for all development needs
+
+repo_url: https://github.com/Byron/bdevel-assembly
+dev_addr: 127.0.0.1:9994
+
+docs_dir: ../../src/md
+site_dir: ../../doc/mkdocs/html
+
+pages:
+- ['index.md', 'Home']
+- ['license.md', 'About', 'License']
+
+theme: yeti
+
+copyright: Copyright &copy; 2014, <a href="https://www.linkedin.com/in/sebastianthiel">Sebastian Thiel & Contributors</a>.
