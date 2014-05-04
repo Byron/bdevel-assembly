@@ -1,6 +1,8 @@
 language: python
 python:
-  - "2.7"
+  # as we support centos, which only has 2.6, we use this.
+  # in theory, there is no issue with 2.7 at all
+  - "2.6"
 
 install:
   - git submodule update --init --recursive

@@ -7,6 +7,14 @@ packages:
       - bcore
       - mock
       - pgit-package
+
+  ###################
+  nosetests-gui: ##
+  ################
+    # NOTE: as above, but with gui support
+    alias: nosetests
+    requires:
+      - nosetests
       - bqt
 
   ##############
