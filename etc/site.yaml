@@ -10,12 +10,15 @@ assembly:
     oss-dependencies: '{assembly.trees.core}/../bdep-oss'
     # side-by-side assembly containing dependencies with proprietary licenses
     nonfree-dependencies: '{assembly.trees.core}/../bdep-nonfree'
+    # side-by-side assembly with (big) gui dependencies
+    oss-gui-dependencies: '{assembly.trees.core}/../bdep-oss-gui'
 
 package-manager:
   include:
    # pull in the entire software configuration
    - '{assembly.trees.nonfree-dependencies}/etc'
    - '{assembly.trees.oss-dependencies}/etc'
+   - '{assembly.trees.oss-gui-dependencies}/etc'
   environment:
     variables:
       regex:
