@@ -50,6 +50,9 @@ packages:
     # A little bit of repetition seems to be required here to trigger pulling in
     # the required configuration
     alias: python
+    python:
+      import:
+        - bprocess.plugins.be_go
     requires: 
       - be-exec
       - python
