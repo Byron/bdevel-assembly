@@ -1,5 +1,5 @@
 logging:
-  level: INFO
+  verbosity: INFO
   disable: 0
 
 assembly:
