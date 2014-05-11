@@ -1,11 +1,10 @@
 packages:
-  ##########
-  bcore: ##
-  ########
+  bcore:
     trees: '{assembly.trees.core}/lib/components/core'
     include: etc
-  ##########
-  bqt:   ##
-  ########
+  bqt:
     trees: '{assembly.trees.core}/lib/components/gui'
+    include: etc
+  bshotgun:
+    trees: '{assembly.trees.core}/lib/integrations/shotgun'
     include: etc

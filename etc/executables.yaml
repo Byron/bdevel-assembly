@@ -4,9 +4,7 @@ packages:
   ############
     # NOTE: this executbale should be able to test everything
     requires:
-      - bcore
       - mock
-      - pgit-package
 
   ###################
   nosetests-gui: ##
@@ -57,3 +55,5 @@ packages:
       - be-exec
       - python
 
+  update-pages:
+    trees: '{assembly.trees.core}/lib/components/core'
