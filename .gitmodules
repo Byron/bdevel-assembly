@@ -6,3 +6,7 @@
 	url = https://github.com/Byron/bgui.git
 	path = lib/components/gui
 	branch = refs/heads/master
+[submodule "bshotgun"]
+	url = https://github.com/Byron/bshotgun.git
+	path = lib/integrations/shotgun
+	branch = refs/heads/master
