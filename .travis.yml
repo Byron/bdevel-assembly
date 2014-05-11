@@ -17,4 +17,5 @@ script:
   # the latter are handled individually
   - ./nosetests
   - ./pgit submodule query
+  - cd ../..
   - bash --verbose lib/components/core/.travis-script.sh
