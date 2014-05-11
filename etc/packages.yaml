@@ -2,10 +2,10 @@ packages:
   ##########
   bcore: ##
   ########
-    trees: '{assembly.trees.core}/src/frameworks/core'
+    trees: '{assembly.trees.core}/lib/components/core'
     include: etc
   ##########
   bqt:   ##
   ########
-    trees: '{assembly.trees.core}/src/frameworks/gui'
+    trees: '{assembly.trees.core}/lib/components/gui'
     include: etc

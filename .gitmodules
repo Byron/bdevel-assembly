@@ -1,8 +1,8 @@
 [submodule "bcore"]
 	url = https://github.com/Byron/bcore.git
-	path = src/frameworks/core
+	path = lib/components/core
 	branch = refs/heads/master
 [submodule "gui"]
 	url = https://github.com/Byron/bgui.git
-	path = src/frameworks/gui
+	path = lib/components/gui
 	branch = refs/heads/master
