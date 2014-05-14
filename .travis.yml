@@ -19,3 +19,4 @@ script:
   - ./pgit submodule query
   - cd ../..
   - bash --verbose lib/components/core/.travis-script.sh
+  - bash lib/integrations/shotgun/.travis-script.sh
