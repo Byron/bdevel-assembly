@@ -10,3 +10,7 @@
 	url = https://github.com/Byron/bshotgun.git
 	path = lib/integrations/shotgun
 	branch = refs/heads/master
+[submodule "shotgun-events"]
+	url = https://github.com/Byron/shotgun-events
+	path = lib/components/shotgun-events
+	branch = refs/heads/master
