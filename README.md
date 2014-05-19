@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Byron/bdevel-assembly.svg?branch=master)](https://travis-ci.org/Byron/bdevel-assembly)
+
 This project is an assembly of various projects. It is meant as fully featured, multi-platform development structure that is easy to use and extend.
 
 
