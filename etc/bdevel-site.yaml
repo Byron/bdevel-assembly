@@ -1,0 +1,28 @@
+logging:
+  verbosity: INFO
+  disable: 0
+
+assembly:
+  trees:
+    # root of the main application
+    core: '{settings-files.bdevel-site.dirname}/..'
+    # All components, like bcore
+    components: '{assembly.trees.core}/lib/components'
+    # All integrations of third party applications/frameworks
+    integrations: '{assembly.trees.core}/lib/integrations'
+
+package-manager:
+  include:
+   # pull in the entire software configuration
+   - '{assembly.trees.core}/../bdep-nonfree/etc'
+   - '{assembly.trees.core}/../bdep-oss/etc'
+   - '{assembly.trees.core}/../bdep-oss-gui/etc'
+  environment:
+    variables:
+      regex:
+        is_path:            '^(.*path|.+paths|.+tree|.+location|.+home|ocio)$'
+        path_is_appendable: '^(?!(ocio|rmantree)).*$'
+
+packages:
+  python:
+    version: '2.7'

@@ -56,4 +56,4 @@ packages:
       - python
 
   update-pages:
-    trees: '{assembly.trees.core}/lib/components/core'
+    include: '{assembly.trees.components}/core'
