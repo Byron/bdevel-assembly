@@ -14,3 +14,7 @@
 	url = https://github.com/Byron/shotgun-events
 	path = lib/components/shotgun-events
 	branch = refs/heads/master
+[submodule "btank"]
+	url = https://github.com/Byron/btank
+	path = lib/integrations/tank
+	branch = refs/heads/master
