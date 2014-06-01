@@ -18,3 +18,7 @@
 	url = https://github.com/Byron/btank
 	path = lib/integrations/tank
 	branch = refs/heads/master
+[submodule "build"]
+	path = build
+	url = https://github.com/Byron/bbuild
+	branch = master
