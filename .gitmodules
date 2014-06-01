@@ -22,3 +22,7 @@
 	path = build
 	url = https://github.com/Byron/bbuild
 	branch = master
+[submodule "btractor"]
+	path = lib/integrations/tractor
+	url = https://github.com/Byron/btractor
+	branch = master
